@@ -1,0 +1,39 @@
+Functii si proceduri pentru MovieDatabase
+-functie nota_regizor (p_id_regizor in integer,p_nota out number)
+      -aceasta functie primeste ca si parametru  id-ul regizorului caruia trebuie sa ii 
+	  aflam nota si va returna valoarea acesteia. Nota se va calcula facand media notelor
+	  filmelor pe care regizorul respectiv le-a regizat.
+-functie nota_actor (p_id_actor in int,p_nota out number)
+      -similar ca la functia nota_regizor
+-functie inregistrare_username(p_username in char,p_valid out bool)
+      -aceasta functie va fi apelata atunci cand utilizatorul se inregistreaza pentru a 
+	  verifica daca username-ul pe care acesta l-a introdus nu este deja inregistrat in
+	  tabela utilizatori. Functia returneaza true sau false
+-functie inregistrare_email(p_email in char,p_valid out bool)
+      -similar ca la functia inregistrare_username, doar ca de aceasta data verificam
+	  email-ul introdus de utilizatori
+-procedure inserare_date_utilizator(p_username in char,p_parola in char,p_email in char)
+      -dupa ce am verificat ca datele introduse de utilizator sa nu existe deja in baza
+	  de date, apelam aceasta procedura care va insera toate informatiile introduse de
+	  utilizator in formularul de inregistrare
+-functie validare_username_si_parola(p_username in char,p_parola in char,p_valid out char)
+     -aceasta functie este folosita in cadrul logarii unui utilizator. Aceasta functie 
+	 va returna mesajul "Username sau parola incorecte!" in cazul in care username-ul sau 
+	 parola introduse de utilizator in formularul de logare nu sunt similare cu cele din 
+	 tabela utilizatori
+-procedura inserare_film_in_lista_de_vizionare(p_id_film in integer)
+     -aceasta procedura primeste ca si parametru id_ul unui film pe care utilizatorul
+	 doreste sa il adauge in lista lui de vizionare
+-procedure populare_ruleaza_in_cinematograf(p_filme in varray)
+     -aceasta procedura introduce filme in view-ul ruleaza_in_cinematograf
+-functie verificare_drepturi(p_id_utilizator in integer,p_valid out bool)
+     -aceasta functie verifica daca utilizatorul respectiv este sau nu administrator
+-procedure stergere_recenzie(p_id_recenzie in integer)
+     -aceasta procedura este utilizata atunci cand un administrator doreste sa stearga
+	 o anumita recenzie
+-Vom avea de asemenea functii pentru sortarea filmelor,regizorilor sau actorilor dupa diferite 
+criterii date ca si parametru (ex: nume,nota,rank,data_lansarii etc)
+
+	  
+	  
+                                           
