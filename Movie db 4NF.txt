@@ -1,0 +1,5 @@
+Aceasta baza de date nu indeplineste 4NF deoarece:
+   -de exemplu, tabela distributie are coloanele Id_film, Id_actor, Created_at etc. Pentru fiecare film, este scris in tabela
+de n ori. N reprezinta numarul de actori din filmul respectiv. In acelasi timp, pe coloana Created_at va aparea aceeasi data la 
+fiecare actor care a jucat in acelasi film. Daca tabela distributie ar avea doar aceste coloane, am putea aduce in 4NF facand 2 tabele, una sa 
+aiba coloanele Id_film si Id_actor iar cealalta coloaele Id-film si Created_at.
