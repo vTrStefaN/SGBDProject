@@ -2,12 +2,11 @@
    Pentru a permite intrarea in aplicatie, utilizatorii trebuie sa se logheze. 
    Aceasta aplicatie permite utilizatorilor sa evalueze un film, sa selecteze filmele dorite in functie de gen, actori sau regizori, 
 chiar si topuri create automat de aplicatie. 
-   De asemenea, acestia pot lasa si recenzii, sa-si creeze liste cu filmele dorite
+   De asemenea, acestia pot lasa si recenzii, sa-si creeze liste cu filmele dorite.
    In functie de evaluarea unui film, aplicatia va evalua automat actorii si regizorii, ca o medie.
    Topurile create vor fi:
 	-topuri pentru fiecare gen de filme;
 	-top pentru regizori;
 	-top pentru actori;
-	-top pentru toate filmele din fiecare gen;
    Movie db mai tine evidenta unui cinematograf. 
 
