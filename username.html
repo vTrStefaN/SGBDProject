@@ -1,0 +1,41 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="username.css"/>\
+  <link rel="stylesheet" media="(max-width:1000px)" href="username-small.css">  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Username-ArchiveR</title>
+ </head>
+ <body class="bg">
+     <section>
+         <img class="logo" src="Images/logo.png">
+         <div>
+             <h1>Username</h1> 
+         </div>       
+         <div class="menu">
+                <a href="homepage.html"><button>Homepage</button></a>
+                <a href="myfiles.html"><button>MyFiles</button></a>
+                <a href="rules.html"><button>Rules</button></a>
+                <a href="login.html"><button>Logout</button></a>
+                <img class="avatar" src="Images/noAvatar.png">
+         </div>
+     </section>
+     <form>
+         <div>
+         <img class="avatar" src="Images/noAvatar.png">
+         <p>Username: ...</p>
+         <p>Pasword: ***</p>
+         <p>Email: ...</p>
+         <p>PhoneNumber:...</p>
+         </div>
+         <div>
+            <input type="file" id="chngavtr" name="user">
+            <input type="button" value="Change your avatar" class="chngbutton" onclick="document.getElementById('chngavtr').click()">
+            <input type="button" value="Change your username" class="chngbutton">
+            <input type="button" value="Change your password" class="chngbutton">
+            <input type="button" value="Change your email" class="chngbutton">
+            <input type="button" value="Add phone number" class="chngbutton">
+        </div>
+     </form>
+</body>
+</html>

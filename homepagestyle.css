@@ -1,0 +1,150 @@
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.bg{
+    background-image: url("Images/Library.jpg");
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+}
+
+section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+section h1{
+    font-family: fantasy;
+    font-size: 50px; 
+    line-height: 0.1; 
+    color: #F7AA04;
+}
+
+section p{
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: center;
+    line-height: 0.1;
+    color: #C51A0A;
+}
+
+section>div+div button{
+   padding: 40px 40px;
+   float:left;
+   opacity: 0.8;
+   border: 2px;
+   box-shadow: 0 9px #999;
+   border-radius: 8px;
+   background-color: #F7AA04;
+   font-family: fantasy;
+   font-size: 30px;
+   line-height:0.5;
+   color: #C51A0A;
+   opacity:0.7;
+}
+
+section>div+div button:hover{
+    background-color: #BA7409;
+}
+
+section>div+div button:active{
+     background-color: #BA7409;
+     box-shadow: 0 5px #666;
+     transform: translateY(4px);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50;
+    left: 100;
+    padding: 20px;
+    width: 500px;
+    height: 350px;
+    background: #F7AA04;
+    border: 20px #C51A0A;
+    border-radius: 20px;
+    opacity:0.7;
+}
+form p{
+   font-family: fantasy;
+   font-size: 20px;
+   line-height:0.2;
+   color: #C51A0A;
+}
+
+form h1{
+   font-family: fantasy;
+   font-size: 20px;
+   line-height:0.2;
+   color: #C51A0A;
+}
+
+form ol{
+   font-family: fantasy;
+   font-size: 20px;
+   line-height:1;
+   color: #C51A0A;
+}
+form div{
+   font-family: fantasy;
+   font-size: 20px;
+   line-height:1;
+   color: #C51A0A;
+}
+
+#archtype{
+    display:flex;
+    flex-direction: row;
+    line-height:2;
+}
+
+form:first-child{
+    line-height:2;
+}
+
+.fullWidth{
+    width:100%;
+
+}
+
+#uploading{
+    visibility: hidden;
+
+}
+
+.toupload{
+    border-radius:5px;
+    background-color:#C51A0A;
+    color:#F7AA04;
+    height: 50px;
+    position:relative;
+    top:-20px;
+   
+}
+.toupload:hover{
+    background-color: lightcoral;
+}
+.toupload:active{
+    transform: translateY(4px);
+}
+
+
+
+

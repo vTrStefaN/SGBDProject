@@ -1,0 +1,78 @@
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Homepage-ArchiveR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="homepagestyle.css">
+  <link rel="stylesheet" media="(max-width:1000px)" href="homepage-small.css">  
+  <style>
+      @media (min-width:900px) and (max-width:1200px){
+           section h1{
+               font-family: fantasy;
+               font-size: 40px; 
+               line-height: 0.1; 
+               color: #F7AA04;
+            }
+           section p{
+               font-family: fantasy;
+               font-size: 25px;
+               text-align: center;
+               line-height: 0.1;
+               color: #C51A0A;
+            }
+            section>div+div button{
+                padding: 30px 15px;
+                float:left;
+                border: 2px;
+                box-shadow: 0 9px #999;
+                border-radius: 8px;
+                background-color: #F7AA04;
+                font-family: fantasy;
+                font-size: 30px;
+                line-height:0.5;
+                color: #C51A0A;
+                opacity:0.7;
+            }
+
+      }
+  </style>
+ </head>
+ <body class="bg">
+     <section>
+         <img class="logo" src="Images/logo.png">
+         <div class="header">
+             <h1>Welcome to ArchiveR</h1>
+             <p>The easiest way to compress files</p> 
+         </div>       
+         <div class="menu">
+             <a href="username.html"><button>Username</button></a>
+             <a href="myfiles.html"><button>MyFiles</button></a>
+             <a href="rules.html"><button>Rules</button></a>
+             <a href="login.html"><button>Logout</button></a>
+             <img class="avatar" src="Images/noAvatar.png">
+         </div>
+     </section>
+     <form>
+         <input type="file" id="uploading" name="usersFiles" multiple>
+         <input type="button" value="Upload your files!" class="toupload" onclick="document.getElementById('uploading').click()">
+         <div id="archType">
+             <input type="radio" name="archiveType" value="BZIP2">BZIP2<br>
+             <input type="radio" name="archiveType" value="GZIP">GZIP<br>
+             <input type="radio" name="archiveType" value="TAR">TAR<br>
+             <input type="radio" name="archiveType" value="ZIP">ZIP<br>
+         </div>
+         <div>
+             <p>Archive name: <input type="text"></p>
+             <p>Delete after (ex: 2 weeks): <input type="text" name="delete"></p>
+             <p>Password: <input type="password"> (optional)</p>
+             <h1>Rules</h1>
+             <ol>
+                 <li>You can upload up to 1GB.</li>
+                 <li>You can upload up to 5 files.</li>
+                 <li>The name of the archive must be of the form: username.archivename</li>
+             </ol>
+         </div>
+     </form>
+</body>
+</html>
